@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+/* responsive*/
+
+.contenedor {
+    display: grid;
+    gap: 10px;
+
+    grid-template:
+        "header" 200px
+        "nav" 60px
+        "main" auto
+        "aside" 80px
+        "footer" 400px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+
+}
+
+.main {
+    grid-area: main;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+.contenedor {
+    grid-template:
+        "header header header" 420px
+        "nav main aside" auto
+        "footer footer footer" 460px /
+        325px auto 550px;
+}
+
+/* header */
+.cab1 {
+    height: 41px;
+    background-color: black;
+}
+
+.cab2 {
+    border: 2px solid;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo1 {
+    width: 200px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: bold 30px Arial, sans-serif;
+}
+
+#busqueda {
+    margin-left: 10px;
+    margin-right: 15px;
+    width: 700px;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+}
+
+#txtBuscar {
+    width: 650px;
+    border: none;
+}
+
+#btn {
+    border: none;
+    width: 50px;
+    background-color: #D15C09;
+    color: white;
+    font-size: 20px;
+}
+
+#btn:hover{
+    background-color: #FF7A0D;
+    transition: 0.4s all ease;
+}
+
+.login {
+    margin-left: 10px;
+}
+
+.login > a{
+    text-decoration: none;
+    color: #606060;
+    font: 12px Arial;
+}
+
+.login >a:hover{
+    color: #A0A0A0;
+}
+
+.megusta {
+    margin-left: 10px;
+}
+
+.megusta > a{
+    text-decoration: none;
+    color: #606060;
+    font: 20px Arial;
+}
+
+.megusta >a:hover{
+    color: #A0A0A0;
+}
+
+.carro {
+    margin-left: 10px;
+}
+
+.carro > a{
+    text-decoration: none;
+    color: #606060;
+    font: 15px Arial;
+}
+
+.carro >a:hover{
+    color: #A0A0A0;
+}
+
+.menuPrincipal {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+li {
+    display: inline-block;
+    margin-right: 18px;
+    position: relative;
+    font-size: 15px;
+}
+
+li > a{
+    color: white;
+    font: 15px Arial;
+    text-decoration: none;
+}
+
+li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #D15C09;
+    transform-origin: bottom left;
+    transition: 0.5s ease-out;
+}
+
+li:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.cab3{
+    background-color: black;
+    border: 2px solid;
+    height: 235px;
+   
+}
+
+.cab3 > h1 {
+    color: white;
+    margin-top: 60px;
+    font: bold 60px Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedorCab1{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contenedorCab1 > p{
+    color: white;
+    font: bold 12px Arial, sans-serif;
+}
+
+#contenedorCab1 >  p > a{
+    color: white;
+    text-decoration: none;
+    font: bold 12px Arial, sans-serif;
+}
+
+#contenedorCab1 >  p > a:hover{
+    transition: 0.2s;
+    color: gray;
+}
+
+/* main */
+
+
+label{
+    display: flex;
+    margin: 10px;
+}
+
+form{
+    display: flex;
+    display: grid;
+}
+
+
+#bPrincipal{
+    margin: 20px;
+    font: 13px Arial, sans-serif;
+}
+
+#b1 > input{
+    margin: 5px;
+    width: 895px;
+    height: 40px;
+    border: 1px solid;
+    border-color: gray;
+}
+
+#b1 > textarea{
+    margin: 5px;
+    width: 895px;
+    height: 150px;
+    border: 1px solid;
+    border-color: gray;
+}
+
+#btn2{
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    color: white;
+    width: 120px;
+    height: 30px;
+    background-color: black;
+    font: 18px Arial, sans-serif;
+}
+
+#btn2:hover{
+    background-color: gray;
+    transition: 0.3s;
+}
+
+#alerta{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 60px;
+    margin-bottom: 150px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    
+}
+
+#icon {
+    margin: 25px;
+}
+
+
+/*footer*/
+
+.piePadre1 {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    background-color: #202020;
+}
+
+.piePadre1>div>h1 {
+    color: white;
+    margin-top: 30px;
+    font: 15px Arial, sans-serif;
+    display: flex;
+}
+
+.piePadre1>div>a {
+    text-decoration: none;
+    color: gray;
+    margin-top: 20px;
+    display: flex;
+    font: 13px Arial, sans-serif;
+}
+
+.piePadre1 > div > a:hover{
+    color: white;
+    transition: 0.2s all ease;
+}
+
+.piePadre1>div>h2 {
+    margin-bottom: 5px;
+    color: gray;
+    margin-top: 40px;
+    display: flex;
+    font: 13px Arial, sans-serif;
+}
+
+.piePadre1>div>p {
+    color: gray;
+    margin-top: 20px;
+    display: flex;
+    font: 13px Arial, sans-serif;
+}
+
+
+.pie1 {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.log {
+    color: white;
+    width: 200px;
+    height: 80px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: bold 55px Arial, sans-serif;
+}
+
+.pie2 {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pie3 {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pie4 {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.piePadre2 {
+    background-color: #202020;
+    border-top: 1px solid;
+    border-color: #606060;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.piePadre2>div>p {
+    color: gray;
+    display: flex;
+    font: 13px Arial, sans-serif;
+}
+
+.pie5 {
+    width: 400px;
+}
+
+.pie6 {
+    width: 300px;
+}
